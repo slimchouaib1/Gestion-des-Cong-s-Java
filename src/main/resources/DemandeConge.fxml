@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="MainAnchorPane" prefHeight="830.0" prefWidth="1340.0" styleClass="grad-bg" stylesheets="@assets/css/style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.bfpme.controllers.DemandeCongeController">
+   <children>
+      <AnchorPane layoutX="34.0" layoutY="148.0" prefHeight="658.0" prefWidth="1272.0" style="-fx-border-color: white;" styleClass="pane1" AnchorPane.bottomAnchor="24.0" AnchorPane.leftAnchor="34.0" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="148.0">
+         <children>
+            <HBox alignment="CENTER" layoutX="388.0" layoutY="23.0" prefHeight="34.0" prefWidth="503.0" AnchorPane.leftAnchor="388.0" AnchorPane.rightAnchor="380.0" AnchorPane.topAnchor="23.0">
+               <children>
+                  <Label styleClass="RobotoMedium" text="Type de congé : " HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="cb_typeconge" onAction="#TypeSelec" prefHeight="25.0" prefWidth="188.0" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <AnchorPane fx:id="paneConge" layoutX="99.0" layoutY="78.0" style="-fx-border-color: white;" styleClass="pane1" AnchorPane.bottomAnchor="39.0" AnchorPane.leftAnchor="98.0" AnchorPane.rightAnchor="97.0" AnchorPane.topAnchor="77.0">
+               <children>
+                  <Label fx:id="TypeTitle" alignment="CENTER" layoutX="388.0" layoutY="14.0" prefHeight="41.0" prefWidth="301.0" styleClass="RobotoBold" text="Congé exeptionnel" AnchorPane.leftAnchor="388.0" AnchorPane.rightAnchor="385.0" AnchorPane.topAnchor="14.0">
+                     <font>
+                        <Font name="Roboto Regular" size="17.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER" layoutX="451.0" layoutY="120.0" prefHeight="40.0" prefWidth="355.0" AnchorPane.leftAnchor="450.0" AnchorPane.rightAnchor="270.0">
+                     <children>
+                        <DatePicker fx:id="datedebut" maxWidth="521.0" prefHeight="40.0" prefWidth="521.0" styleClass="RobotoBold" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="452.0" layoutY="256.0" prefHeight="81.0" prefWidth="353.0" AnchorPane.leftAnchor="451.0" AnchorPane.rightAnchor="271.0">
+                     <children>
+                        <TextArea fx:id="Desc" maxWidth="521.0" prefHeight="81.0" prefWidth="521.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="430.0" layoutY="447.0" AnchorPane.leftAnchor="439.0" AnchorPane.rightAnchor="439.0">
+                     <children>
+                        <Button maxWidth="300.0" mnemonicParsing="false" onAction="#Demander" prefHeight="41.0" prefWidth="196.0" text="Demander" textAlignment="CENTER">
+                           <font>
+                              <Font name="Roboto Regular" size="14.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="btn-primary" />
+                              <String fx:value="RobotoBold" />
+                           </styleClass>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="450.0" layoutY="183.0" prefHeight="40.0" prefWidth="355.0" AnchorPane.leftAnchor="449.0" AnchorPane.rightAnchor="271.0">
+                     <children>
+                        <DatePicker fx:id="datefin" maxWidth="521.0" prefHeight="40.0" prefWidth="521.0" styleClass="RobotoBold" />
+                     </children>
+                  </HBox>
+                  <Label layoutX="289.0" layoutY="120.0" minWidth="125.0" prefHeight="40.0" prefWidth="125.0" styleClass="RobotoBold" text="Date debut : " AnchorPane.leftAnchor="289.0" AnchorPane.rightAnchor="660.0">
+                     <font>
+                        <Font name="Roboto Regular" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="289.0" layoutY="183.0" minWidth="125.0" prefHeight="40.0" prefWidth="125.0" styleClass="RobotoBold" text="Date fin : " AnchorPane.leftAnchor="290.0" AnchorPane.rightAnchor="661.0">
+                     <font>
+                        <Font name="Roboto Regular" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="289.0" layoutY="256.0" minWidth="125.0" prefHeight="40.0" prefWidth="125.0" styleClass="RobotoBold" text="Description : " AnchorPane.leftAnchor="290.0" AnchorPane.rightAnchor="661.0">
+                     <font>
+                        <Font name="Roboto Regular" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="ForDoc1" layoutX="292.0" layoutY="356.0" prefHeight="40.0" prefWidth="188.0" styleClass="RobotoBold" text="Document Justicatif : " AnchorPane.leftAnchor="291.0" AnchorPane.rightAnchor="599.0">
+                     <font>
+                        <Font name="Roboto Regular" size="15.0" />
+                     </font>
+                  </Label>
+                  <HBox fx:id="ForDoc2" alignment="CENTER" layoutX="453.0" layoutY="356.0" prefHeight="40.0" prefWidth="492.0" spacing="15.0" AnchorPane.leftAnchor="452.0" AnchorPane.rightAnchor="134.0">
+                     <children>
+                        <TextField fx:id="Doc_Link" disable="true" maxWidth="521.0" prefHeight="29.0" prefWidth="521.0" />
+                        <Button maxWidth="134.0" minWidth="134.0" mnemonicParsing="false" onAction="#Doc_Imp" prefHeight="28.0" prefWidth="134.0" styleClass="btn-primary" text="Importer" textAlignment="CENTER">
+                           <font>
+                              <Font name="Roboto Regular" size="13.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

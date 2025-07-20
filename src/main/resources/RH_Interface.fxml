@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="MainAnchorPane" prefHeight="830.0" prefWidth="1340.0" styleClass="grad-bg" stylesheets="@assets/css/style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.bfpme.controllers.RHC.RHController">
+   <children>  
+      <AnchorPane fx:id="PaneCont" layoutX="240.0" layoutY="106.0" prefHeight="724.0" prefWidth="1100.0" styleClass="pane1" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="240.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="106.0" />
+      <AnchorPane layoutX="-1.0" layoutY="105.0" prefHeight="724.0" prefWidth="240.0" style="-fx-background-color: #11234a1a;" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="105.0">
+         <children>
+            <VBox alignment="CENTER" layoutX="5.0" layoutY="153.0" prefHeight="408.0" prefWidth="204.0" spacing="10.0" AnchorPane.bottomAnchor="165.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="153.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#showUtilisateursPane" prefHeight="55.0" prefWidth="221.0" text="Utilisateurs">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="btn-primary" />
+                        <String fx:value="RobotoMedium" />
+                     </styleClass>
+                  </Button>
+                  <Separator prefHeight="10.0" prefWidth="200.0" />
+                  <Button mnemonicParsing="false" onAction="#showDepartementPane" prefHeight="55.0" prefWidth="221.0" text="Départements">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="btn-primary" />
+                        <String fx:value="RobotoMedium" />
+                     </styleClass>
+                  </Button>
+                  <Separator prefHeight="10.0" prefWidth="200.0" />
+                  <Button mnemonicParsing="false" onAction="#showRolesPane" prefHeight="55.0" prefWidth="221.0" text="Fonctions">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="btn-primary" />
+                        <String fx:value="RobotoMedium" />
+                     </styleClass>
+                  </Button>
+                  <Separator prefHeight="10.0" prefWidth="200.0" />
+                  <Button mnemonicParsing="false" onAction="#showCongePane" prefHeight="55.0" prefWidth="221.0" text="Congés">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="btn-primary" />
+                        <String fx:value="RobotoMedium" />
+                     </styleClass>
+                  </Button>
+                  <Separator prefHeight="10.0" prefWidth="200.0" />
+                  <Button mnemonicParsing="false" onAction="#showEmailTempPane" prefHeight="55.0" prefWidth="221.0" text="Modèle de correspondance">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="btn-primary" />
+                        <String fx:value="RobotoMedium" />
+                     </styleClass>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

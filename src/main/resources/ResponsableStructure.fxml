@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="MainAnchorPane" prefHeight="650.0" prefWidth="1000.0" styleClass="pane1" stylesheets="@assets/css/style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.bfpme.controllers.RHC.ResponsableStructure">
+   <children>
+      <Pane prefHeight="650.0" prefWidth="1000.0">
+         <children>
+            <HBox layoutX="243.0" layoutY="582.0" prefHeight="40.0" prefWidth="515.0">
+               <children>
+                  <ComboBox fx:id="userComboBox" prefHeight="40.0" prefWidth="192.0" promptText="Utilisateur" />
+                  <Separator orientation="VERTICAL" prefHeight="40.0" prefWidth="83.0" />
+                  <Button mnemonicParsing="false" onAction="#Affecter_manager" prefHeight="40.0" prefWidth="137.0" styleClass="btn-primary" text="Affecter">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Separator orientation="VERTICAL" prefHeight="40.0" prefWidth="83.0" />
+                  <ComboBox fx:id="managerComboBox" prefHeight="40.0" prefWidth="192.0" promptText="Manager" />
+               </children>
+            </HBox>
+            <TreeTableView fx:id="userTable" layoutX="78.0" layoutY="117.0" prefHeight="447.0" prefWidth="844.0">
+               <columns>
+                  <TreeTableColumn fx:id="idUserColumn" prefWidth="75.0" text="ID" />
+                  <TreeTableColumn fx:id="prenomUserColumn" prefWidth="140.0" text="Prenom" />
+                  <TreeTableColumn fx:id="nomUserColumn" prefWidth="153.0" text="Nom" />
+                  <TreeTableColumn fx:id="emailUserColumn" prefWidth="270.0" text="Email" />
+                  <TreeTableColumn fx:id="managerUserColumn" prefWidth="205.0" text="Manager" />
+               </columns>
+            </TreeTableView>
+            <TextField fx:id="searchField" layoutX="192.0" layoutY="64.0" onAction="#rechercheUser" prefHeight="29.0" prefWidth="205.0" />
+            <TextField fx:id="searchField1" layoutX="593.0" layoutY="64.0" onAction="#rechercheManager" prefHeight="29.0" prefWidth="205.0" />
+            <Label alignment="CENTER" layoutX="248.0" layoutY="38.0" prefHeight="17.0" prefWidth="94.0" text="Utilisateur" textAlignment="CENTER">
+               <styleClass>
+                  <String fx:value="FontSize-15" />
+                  <String fx:value="RobotoBlack" />
+               </styleClass>
+            </Label>
+            <Label alignment="CENTER" layoutX="649.0" layoutY="38.0" prefHeight="17.0" prefWidth="94.0" text="Manager" textAlignment="CENTER">
+               <styleClass>
+                  <String fx:value="FontSize-15" />
+                  <String fx:value="RobotoBlack" />
+               </styleClass>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

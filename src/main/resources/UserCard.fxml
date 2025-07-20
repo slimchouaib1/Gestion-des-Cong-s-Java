@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="Card" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="162.0" prefWidth="332.0" styleClass="grad-bg2" stylesheets="@assets/css/style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.bfpme.controllers.UserCardController">
+    <children>
+        <ImageView fx:id="cardimage" fitHeight="100.0" fitWidth="100.0" layoutX="12.0" layoutY="13.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@assets/imgs/User.jpg" />
+         </image>
+        </ImageView>
+      <HBox fx:id="HBoxBtns" layoutX="12.0" layoutY="123.0" prefHeight="32.0" prefWidth="100.0">
+         <children>
+                  <Button mnemonicParsing="false" onAction="#ModifierUser" styleClass="settingsButton">
+                      <graphic>
+                          <ImageView fitHeight="22.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/imgs/edit.png" />
+                     </image>
+                          </ImageView>
+                      </graphic>
+                  </Button>
+            <Separator orientation="VERTICAL" prefHeight="32.0" prefWidth="19.0" styleClass="seperator" />
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#SupprimerUser" styleClass="settingsButton">
+                      <graphic>
+                          <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/imgs/trash.png" />
+                     </image>
+                          </ImageView>
+                      </graphic>
+                  </Button>
+         </children>
+      </HBox>
+      <VBox layoutX="135.0" layoutY="12.0" prefHeight="123.0" prefWidth="185.0">
+         <children>
+                <Label fx:id="cardnameprename" prefHeight="35.0" prefWidth="176.0" styleClass="RobotoBold" text="Name Prename">
+                    <font>
+                        <Font name="Roboto Bold" size="18.0" />
+                    </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+                </Label>
+                <Label fx:id="cardemail" prefHeight="40.0" prefWidth="177.0" styleClass="RobotoRegular" text="Email">
+                    <font>
+                        <Font name="Roboto Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="cardrole" prefHeight="30.0" prefWidth="176.0" styleClass="RobotoRegular" text="Role">
+                    <font>
+                        <Font name="Roboto Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="carddepart" prefHeight="41.0" prefWidth="177.0" styleClass="RobotoRegular" text="Departement">
+                    <font>
+                        <Font name="Roboto Bold" size="14.0" />
+                    </font>
+                </Label>
+         </children>
+      </VBox>
+    </children>
+</Pane>

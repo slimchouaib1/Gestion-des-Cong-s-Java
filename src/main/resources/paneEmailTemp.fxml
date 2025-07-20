@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="MainAnchorPane" prefHeight="726.0" prefWidth="1119.0" styleClass="grad-bg" stylesheets="@assets/css/style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.bfpme.controllers.RHC.paneEmailTempController">
+   <children>
+      <Label alignment="TOP_CENTER" layoutX="406.0" layoutY="21.0" prefHeight="29.0" prefWidth="308.0" styleClass="RobotoBold" text="Modèles de correspondance" AnchorPane.leftAnchor="406.0" AnchorPane.rightAnchor="405.0" AnchorPane.topAnchor="21.0">
+         <font>
+            <Font size="24.0" />
+         </font>²
+      </Label>
+      <AnchorPane layoutX="70.0" layoutY="73.0" prefHeight="597.0" prefWidth="980.0" styleClass="paneRoundedCornders" AnchorPane.bottomAnchor="56.0" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="69.0" AnchorPane.topAnchor="73.0">
+         <children>
+            <HBox fx:id="Hfirst" alignment="CENTER" layoutX="303.0" layoutY="535.0" prefHeight="37.0" prefWidth="376.0" spacing="25.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="303.0" AnchorPane.rightAnchor="303.0">
+               <children>
+                  <Button fx:id="Add" mnemonicParsing="false" onAction="#AjouterTemp" prefHeight="41.0" prefWidth="100.0" text="Ajouter">
+                     <styleClass>
+                        <String fx:value="btn-primary" />
+                        <String fx:value="RobotoBold" />
+                     </styleClass></Button>
+                  <Button fx:id="Update" mnemonicParsing="false" onAction="#ModifierTemp" prefHeight="41.0" prefWidth="100.0" text="Modifier">
+                     <styleClass>
+                        <String fx:value="btn-primary" />
+                        <String fx:value="RobotoBold" />
+                     </styleClass></Button>
+                  <Button fx:id="Delete" mnemonicParsing="false" onAction="#SupprimerTemp" prefHeight="41.0" prefWidth="100.0" text="Supprimer">
+                     <styleClass>
+                        <String fx:value="btn-primary" />
+                        <String fx:value="RobotoBold" />
+                     </styleClass></Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="381.0" layoutY="36.0" prefHeight="43.0" prefWidth="562.0" AnchorPane.leftAnchor="381.0" AnchorPane.rightAnchor="38.0">
+               <children>
+                  <Label maxHeight="45.0" maxWidth="91.0" minHeight="19.0" minWidth="91.0" prefHeight="45.0" prefWidth="91.0" styleClass="RobotoRegular" text="Object :" />
+                  <TextField fx:id="objectTF" prefHeight="29.0" prefWidth="970.0" />
+               </children>
+            </HBox>
+            <VBox layoutX="49.0" layoutY="21.0" minWidth="283.0" prefHeight="487.0" prefWidth="283.0" spacing="11.0" AnchorPane.bottomAnchor="88.0" AnchorPane.leftAnchor="48.0" AnchorPane.topAnchor="21.0">
+               <children>
+                  <Label alignment="TOP_CENTER" prefHeight="19.0" prefWidth="288.0" styleClass="RobotoBoldItalic" text="Listes des templates:" />
+                  <TextField fx:id="RechercheTemp" onAction="#EmailTempRecherche" prefHeight="29.0" prefWidth="314.0" promptText="Recherche" />
+                  <ListView fx:id="ObjListView" prefHeight="924.0" prefWidth="63.0" />
+               </children>
+            </VBox>
+            <Label layoutX="380.0" layoutY="96.0" styleClass="RobotoRegular" text="Message :" />
+            <TextArea fx:id="MessageTF" layoutX="382.0" layoutY="124.0" prefHeight="383.0" prefWidth="561.0" wrapText="true" AnchorPane.bottomAnchor="91.0" AnchorPane.leftAnchor="381.0" AnchorPane.rightAnchor="38.0" AnchorPane.topAnchor="123.0" />
+            <HBox fx:id="Hsecond" alignment="CENTER" layoutX="378.0" layoutY="534.0" prefHeight="37.0" prefWidth="224.0" AnchorPane.bottomAnchor="26.0" AnchorPane.leftAnchor="377.0" AnchorPane.rightAnchor="378.0">
+               <children>
+                  <Button fx:id="Enregistrer" mnemonicParsing="false" onAction="#EnregistrerEmail" prefHeight="38.0" prefWidth="95.0" text="Enregistrer">
+                     <styleClass>
+                        <String fx:value="btn-secondary" />
+                        <String fx:value="btn-approver" />
+                        <String fx:value="RobotoBold" />
+                     </styleClass>
+                  </Button>
+                  <Separator orientation="VERTICAL" prefHeight="37.0" prefWidth="32.0" styleClass="seperator" />
+                  <Button fx:id="Annuler" mnemonicParsing="false" onAction="#AnnulerEmail" prefHeight="38.0" prefWidth="95.0" text="Annuler">
+                     <styleClass>
+                        <String fx:value="btn-secondary" />
+                        <String fx:value="btn-refuser" />
+                        <String fx:value="RobotoBold" />
+                     </styleClass>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

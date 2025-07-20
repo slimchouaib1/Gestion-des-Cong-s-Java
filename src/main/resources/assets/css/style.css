@@ -1,0 +1,718 @@
+/* FONTS IMPORT */
+@font-face {
+    font-family: "Roboto Black";
+    font-style: normal;
+    font-weight: 700;
+    src: url('../files/fonts/Roboto-Black.ttf');
+}
+
+/* Roboto Black */
+@font-face {
+    font-family: "Roboto Black Italic";
+    font-style: normal;
+    font-weight: 700;
+    src: url('../files/fonts/Roboto-BlackItalic.ttf');
+}
+
+/* Roboto Black Italic */
+@font-face {
+    font-family: "Roboto Bold Condensed";
+    font-style: normal;
+    font-weight: 700;
+    src: url('../files/fonts/Roboto-BoldCondensed.ttf');
+}
+
+/* Roboto Black Condensed */
+@font-face {
+    font-family: "Roboto Bold";
+    font-style: normal;
+    font-weight: 700;
+    src: url('../files/fonts/Roboto-Bold.ttf');
+}
+
+/* Roboto Bold */
+@font-face {
+    font-family: "Roboto Bold Italic";
+    font-style: normal;
+    font-weight: 400;
+    src: url('../files/fonts/Roboto-BoldItalic.ttf');
+}
+
+/* Roboto Bold Italic */
+@font-face {
+    font-family: "Roboto Bold Condensed Italic";
+    font-style: normal;
+    font-weight: 700;
+    src: url('../files/fonts/Roboto-BoldCondensedItalic.ttf');
+}
+
+/* Roboto Bold Condensed Italic */
+@font-face {
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: 700;
+    src: url('../files/fonts/Roboto-Condensed.ttf');
+}
+
+/* Roboto Condensed */
+@font-face {
+    font-family: "Roboto Condensed Italic";
+    font-style: normal;
+    font-weight: 700;
+    src: url('../files/fonts/Roboto-CondensedItalic.ttf');
+}
+
+/* Roboto Condensed Italic */
+@font-face {
+    font-family: "Roboto Italic";
+    font-style: normal;
+    font-weight: 700;
+    src: url('../files/fonts/Roboto-Italic.ttf');
+}
+
+/* Roboto Italic */
+@font-face {
+    font-family: "Roboto Light";
+    font-style: normal;
+    font-weight: 700;
+    src: url('../files/fonts/Roboto-Light.ttf');
+}
+
+/* Roboto Light */
+@font-face {
+    font-family: "Roboto Light Italic";
+    font-style: normal;
+    font-weight: 700;
+    src: url('../files/fonts/Roboto-LightItalic.ttf');
+}
+
+/* Roboto Light Italic */
+@font-face {
+    font-family: "Roboto Medium";
+    font-style: normal;
+    font-weight: 700;
+    src: url('../files/fonts/Roboto-Medium.ttf');
+}
+
+/* Roboto Medium */
+@font-face {
+    font-family: "Roboto Bold Condensed Italic";
+    font-style: normal;
+    font-weight: 700;
+    src: url('../files/fonts/Roboto-MediumItalic.ttf');
+}
+
+/* Roboto Medium Italic */
+@font-face {
+    font-family: "Roboto Regular";
+    font-style: normal;
+    font-weight: 700;
+    src: url('../files/fonts/Roboto-Regular.ttf');
+}
+
+/* Roboto Regular */
+@font-face {
+    font-family: "Roboto Thin";
+    font-style: normal;
+    font-weight: 700;
+    src: url('../files/fonts/Roboto-Thin.ttf');
+}
+
+/* Roboto Thin */
+@font-face {
+    font-family: "Roboto Thin Italic";
+    font-style: normal;
+    font-weight: 700;
+    src: url('../files/fonts/Roboto-ThinItalic.ttf');
+}
+
+/* Roboto Thin Italic */
+
+/* FONTS DESIGNS */
+.RobotoBlack {
+    -fx-font-family: "Roboto Black";
+    -fx-font-size: 14px; /* Default size */
+
+}
+
+.RobotoBlackItalic {
+    -fx-font-family: "Roboto Black Italic";
+    -fx-font-size: 14px; /* Default size */
+
+}
+
+.RobotoBlackCondenseda {
+    -fx-font-family: "Roboto Black Condensed";
+    -fx-font-size: 14px; /* Default size */
+
+}
+
+.RobotoBold {
+    -fx-font-family: "Roboto Bold";
+    -fx-font-size: 14px; /* Default size */
+
+}
+
+.RobotoBoldItalic {
+    -fx-font-family: "Roboto Bold Italic";
+    -fx-font-size: 14px; /* Default size */
+
+}
+
+.RobotoBoldCondensedItalic {
+    -fx-font-family: "Roboto Bold Condensed Italic";
+    -fx-font-size: 14px; /* Default size */
+
+}
+
+.RobotoCondensed {
+    -fx-font-family: "Roboto Condensed";
+    -fx-font-size: 14px; /* Default size */
+
+}
+
+.RobotoCondensedItalic {
+    -fx-font-family: "Roboto Condensed Italic";
+    -fx-font-size: 14px; /* Default size */
+
+}
+
+.RobotoItalic {
+    -fx-font-family: "Roboto Italic";
+    -fx-font-size: 14px; /* Default size */
+
+}
+
+.RobotoLight {
+    -fx-font-family: "Roboto Light";
+    -fx-font-size: 14px; /* Default size */
+
+}
+
+.RobotoLightItalic {
+    -fx-font-family: "Roboto Light Italic";
+    -fx-font-size: 14px; /* Default size */
+
+}
+
+.RobotoMedium {
+    -fx-font-family: "Roboto Medium";
+    -fx-font-size: 14px; /* Default size */
+
+}
+
+.RobotoMediumItalic {
+    -fx-font-family: "Roboto Medium Italic";
+    -fx-font-size: 14px; /* Default size */
+
+}
+
+.RobotoRegular {
+    -fx-font-family: "Roboto Regular";
+    -fx-font-size: 14px; /* Default size */
+
+}
+
+.RobotoThin {
+    -fx-font-family: "Roboto Thin";
+    -fx-font-size: 14px; /* Default size */
+
+}
+
+.RobotoThinItalic {
+    -fx-font-family: "Roboto Thin Italic";
+    -fx-font-size: 14px; /* Default size */
+
+}
+
+/* FONTS SIZES DESIGN */
+.FontSize-10 {
+    -fx-font-size: 10px;
+}
+
+.FontSize-11 {
+    -fx-font-size: 11px;
+}
+
+.FontSize-12 {
+    -fx-font-size: 12px;
+}
+
+.FontSize-13 {
+    -fx-font-size: 13px;
+}
+
+.FontSize-14 {
+    -fx-font-size: 14px;
+}
+
+.FontSize-15 {
+    -fx-font-size: 15px;
+}
+
+.FontSize-16 {
+    -fx-font-size: 16px;
+}
+
+.FontSize-17 {
+    -fx-font-size: 17px;
+}
+
+.FontSize-18 {
+    -fx-font-size: 18px;
+}
+
+.FontSize-19 {
+    -fx-font-size: 19px;
+}
+
+.FontSize-20 {
+    -fx-font-size: 20px;
+}
+
+.FontSize-21 {
+    -fx-font-size: 21px;
+}
+
+
+/* TEXT INPUTS DESIGNS */
+.text-field {
+    -fx-background-color: white;
+    -fx-border-color: #112349;
+    -fx-border-width: 1;
+    -fx-border-radius: 5;
+    -fx-padding: 5;
+}
+
+.text-field:focused {
+    -fx-border-color: linear-gradient(#112349, #1a3766);
+    -fx-border-width: 2;
+}
+
+.text-area {
+    -fx-background-color: white;
+    -fx-border-color: #112349;
+    -fx-border-width: 1;
+    -fx-border-radius: 5;
+    -fx-padding: 5;
+    -fx-font-family: "Arial";
+    -fx-font-size: 14px;
+}
+
+.text-area .content {
+    -fx-background-color: white;
+    -fx-padding: 5;
+}
+
+.text-area:focused {
+    -fx-border-color: linear-gradient(#112349, #1a3766);
+    -fx-border-width: 2;
+}
+
+.loginTextField {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent transparent #eab53f transparent;
+    -fx-border-width: 0 0 1 0;
+    -fx-padding: 0 0 3 0;
+}
+
+.loginTextField:focused {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent transparent #eab53f transparent;
+    -fx-border-width: 0 0 1 0;
+    -fx-padding: 0 0 3 0;
+}
+
+/* BUTTONS DESIGNS */
+.btn-primary {
+    -fx-background-color: linear-gradient(#112349, #1a3766);
+    -fx-background-radius: 5;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.2, 0, 0);
+    -fx-border-color: #1a3766;
+    -fx-border-width: 1;
+    -fx-border-radius: 5;
+    -fx-cursor: hand;
+}
+
+.btn-secondary {
+    -fx-background-color: linear-gradient(#E9A91F, #D88A1A); /* Adjusted to a darker shade */
+    -fx-background-radius: 5;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.2, 0, 0);
+    -fx-border-color: #D88A1A; /* Adjusted to match the darker shade */
+    -fx-border-width: 1;
+    -fx-border-radius: 5;
+    -fx-cursor: hand;
+}
+
+.btn-approver {
+    -fx-background-color: linear-gradient(#E9A91F, #D88A1A);
+    -fx-background-radius: 5;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgb(44, 104, 27), 15, 0.2, 0, 0);
+    -fx-border-color: #D88A1A;
+    -fx-border-width: 1;
+    -fx-border-radius: 5;
+    -fx-cursor: hand;
+}
+
+.btn-refuser {
+    -fx-background-color: linear-gradient(#E9A91F, #D88A1A);
+    -fx-background-radius: 5;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgb(239, 84, 84), 15, 0.2, 0, 0);
+    -fx-border-color: #D88A1A;
+    -fx-border-width: 1;
+    -fx-border-radius: 5;
+    -fx-cursor: hand;
+}
+
+.btn-secondary:hover {
+    -fx-background-color: linear-gradient(#D88A1A, #E9A91F); /* Reverse the gradient for hover effect */
+}
+
+.btn-secondary:pressed {
+    -fx-background-color: #B77814; /* A further darker shade for pressed state */
+}
+
+.btn-primary:pressed {
+    -fx-background-color: #0d1d33;
+}
+
+.btn-primary:hover {
+    -fx-background-color: linear-gradient(#1a3766, #112349);
+}
+
+.settingsButton {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+/* DATE-PICKER DESIGNS */
+.date-picker {
+    -fx-background-color: white;
+    -fx-border-color: #112349;
+    -fx-border-width: 1;
+    -fx-border-radius: 5;
+    -fx-padding: 5;
+    -fx-font-family: "Arial";
+    -fx-font-size: 14px;
+}
+
+.date-picker:focused {
+    -fx-border-color: linear-gradient(#112349, #1a3766);
+    -fx-border-width: 2;
+}
+
+.date-picker .arrow {
+    -fx-background-color: linear-gradient(#112349, #1a3766);
+    -fx-padding: 5;
+    -fx-background-radius: 5;
+}
+
+.date-picker .arrow-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.date-picker .popup {
+    -fx-background-color: white;
+    -fx-border-color: #112349;
+    -fx-border-width: 1;
+    -fx-border-radius: 5;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.2, 0, 0);
+}
+
+.date-picker .content {
+    -fx-background-color: white;
+}
+
+.date-picker .date-cell:hover {
+    -fx-background-color: rgba(17, 35, 73, 0.1);
+}
+
+.date-picker .date-cell:selected {
+    -fx-background-color: linear-gradient(#1a3766, #112349);
+    -fx-text-fill: white;
+}
+
+/* TABLE-VIEW DESIGNS */
+.table-view {
+    -fx-background-color: white;
+    /*-fx-border-color: #112349;
+    -fx-border-width: 1;
+    -fx-border-radius: 5;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.2, 0, 0);*/
+}
+
+.table-view .column-header-background {
+    -fx-background-color: linear-gradient(#112349, #1a3766);
+    -fx-border-color: #112349;
+    -fx-border-width: 0 0 1 0;
+    -fx-text-fill: white;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 5 10;
+    -fx-font-family: "Arial";
+}
+
+.table-view .table-row-cell {
+    -fx-border-color: transparent transparent #112349 transparent;
+}
+
+.table-view .table-row-cell:filled:selected, .table-view .table-row-cell:filled:selected:hover {
+    -fx-background-color: linear-gradient(rgba(26, 55, 102, 0.13), rgba(17, 35, 73, 0.13));
+    -fx-text-fill: white;
+}
+
+.table-view .table-cell {
+    -fx-padding: 5 10;
+    -fx-text-fill: #112349;
+    -fx-font-family: "Arial";
+}
+
+.table-view .table-cell:selected {
+    -fx-background-color: linear-gradient(rgba(26, 55, 102, 0.13), rgba(17, 35, 73, 0.13));
+    -fx-text-fill: white;
+}
+
+.table-view .table-cell:hover {
+    -fx-background-color: rgba(17, 35, 73, 0.1);
+}
+
+/* COMBO-BOX DESIGNS */
+.combo-box {
+    -fx-background-color: white;
+    -fx-border-color: #112349;
+    -fx-border-width: 1;
+    -fx-border-radius: 5;
+    -fx-padding: 2;
+}
+
+.combo-box .arrow {
+    -fx-background-color: linear-gradient(#112349, #1a3766);
+    -fx-padding: 4;
+    -fx-background-radius: 5;
+}
+
+.combo-box .arrow-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.combo-box .arrow-button .arrow {
+    -fx-shape: "M 0 0 L 4 4 L 8 0 Z";
+    -fx-background-insets: 0;
+}
+
+.combo-box .list-cell:filled:selected, .combo-box .list-cell:filled:selected:hover {
+    -fx-background-color: linear-gradient(#1a3766, #112349);
+    -fx-text-fill: white;
+}
+
+.combo-box .combo-box-popup {
+    -fx-background-color: white;
+    -fx-border-color: #112349;
+    -fx-border-width: 1;
+    -fx-border-radius: 5;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.2, 0, 0);
+}
+
+.combo-box .list-cell {
+    -fx-background-color: white;
+    -fx-text-fill: #112349;
+    -fx-padding: 5 10;
+    -fx-font-family: "Roboto Regular";
+}
+
+.combo-box .list-cell:filled:hover {
+    -fx-background-color: rgba(17, 35, 73, 0.1);
+}
+
+/* PANE DESIGNS */
+.paneRoundedCornders {
+    -fx-background-size: 1200 900;
+    -fx-background-radius: 18 18 18 18;
+    -fx-border-radius: 18 18 18 18;
+    -fx-background-color: rgba(255, 255, 255, 0.24);
+    -fx-border-color: white;
+}
+
+.paneRoundedCorndersANNUEL {
+    -fx-background-size: 1200 900;
+    -fx-background-radius: 18 18 18 18;
+    -fx-border-radius: 18 18 18 18;
+    -fx-background-color: rgba(255, 255, 255, 0.24);
+    -fx-border-color: #f3f3f3;
+    -fx-border-width: 2;
+    -fx-effect: dropshadow(three-pass-box, #E9A91F, 10, 0, 0, 0);
+
+}
+
+.paneRoundedCorndersMALADIE {
+    -fx-background-size: 1200 900;
+    -fx-background-radius: 18 18 18 18;
+    -fx-border-radius: 18 18 18 18;
+    -fx-background-color: rgba(255, 255, 255, 0.24);
+    -fx-border-color: #f3f3f3;
+    -fx-border-width: 2;
+    -fx-effect: dropshadow(three-pass-box, #E9A91F, 10, 0, 0, 0);
+}
+
+.paneRoundedCorndersEXCEPTIONNEL {
+    -fx-background-size: 1200 900;
+    -fx-background-radius: 18 18 18 18;
+    -fx-border-radius: 18 18 18 18;
+    -fx-background-color: rgba(255, 255, 255, 0.24);
+    -fx-border-color: #f3f3f3;
+    -fx-border-width: 2;
+    -fx-effect: dropshadow(three-pass-box, #E9A91F, 10, 0, 0, 0);
+
+}
+
+.paneRoundedCorndersMATERNITE {
+    -fx-background-size: 1200 900;
+    -fx-background-radius: 18 18 18 18;
+    -fx-border-radius: 18 18 18 18;
+    -fx-background-color: rgba(255, 255, 255, 0.24);
+    -fx-border-color: #f3f3f3;
+    -fx-border-width: 2;
+    -fx-effect: dropshadow(three-pass-box, #E9A91F, 10, 0, 0, 0);
+
+}
+
+.pane-clr {
+    -fx-background-color: #112349;
+}
+
+.pane1 {
+    -fx-background-color: rgba(255, 255, 255, 0.24);
+}
+
+.pane2 {
+    -fx-background-color: rgba(255, 255, 255, 0.24);
+    -fx-border-color: white;
+}
+
+.CardNotif {
+    -fx-background-size: 1200 900;
+    -fx-background-radius: 5 5 5 5;
+    -fx-border-radius: 5 5 5 5;
+    -fx-background-color: white;
+}
+
+.grad-bg {
+    -fx-background-color: linear-gradient(to right, rgba(17, 35, 73, 0.2), rgba(233, 169, 31, 0.06));
+}
+
+.grad-bg2 {
+    -fx-background-color: linear-gradient(to right, rgba(17, 35, 73, 0.2), rgba(233, 169, 31, 0.06));
+}
+
+.transparent-background {
+    -fx-border-width: 2;
+    -fx-effect: dropshadow(gaussian, rgb(255, 196, 0), 10, 0.2, 0, 0);
+    -fx-border-color: #E9A91F;
+
+}
+
+.PaneNotifications {
+    -fx-background-color: #112349;
+    -fx-border-width: 2;
+    -fx-effect: dropshadow(gaussian, rgb(255, 196, 0), 10, 0.2, 0, 0);
+    -fx-border-color: #E9A91F;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+/* MISCELLANEOUS DESIGNS*/
+.seperator {
+    visibility: hidden;
+
+
+}
+
+.LogoBfpme {
+    -fx-effect: dropshadow(three-pass-box, #E9A91F, 15, 0, 0, 0);
+}
+
+.LogoBfpme:hover {
+    -fx-effect: dropshadow(three-pass-box, red, 20, 0, 0, 0);
+}
+
+.tooltip {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-padding: 10;
+    -fx-border-color: rgb(128, 128, 128);
+    -fx-border-width: 1;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 10, 0.2, 0, 0);
+    -fx-font-family: "Arial";
+    -fx-font-size: 14px;
+    -fx-pref-width: 200px;
+    -fx-wrap-text: true;
+}
+
+.separator1 {
+    -fx-background-color: #E9A91F;
+}
+
+.tab-pane > .tab-header-area {
+    -fx-padding: 3;
+}
+
+.tab-pane > .tab-header-area > .tab-header-background {
+    -fx-background-color: rgba(0, 0, 0, 0.07);
+    -fx-background-insets: 0, 0 0 1px 0;
+}
+
+.tab-pane > .tab-header-area > .headers-region > .tab {
+    -fx-background-color: #ccdaff;
+    -fx-background-insets: 0 0 1px 0;
+    -fx-padding: 10px 25px 10px 25px;
+    -fx-border-color: #c9c9c9;
+}
+
+.tab-pane > .tab-header-area > .headers-region > .tab > .tab-container > .tab-label {
+    -fx-text-fill: #112349;
+    -fx-font-family: "Roboto Bold";
+    -fx-font-size: 14px; /* Default size */
+}
+
+.tab-pane > .tab-header-area > .headers-region > .tab:selected {
+    -fx-background-color: #f8d58d, white;
+    -fx-background-insets: 0, 0 0 2px 0;
+}
+
+.tab-pane > .tab-header-area > .headers-region > .tab:selected > .tab-container > .tab-label {
+    -fx-text-fill: #E9A91F;
+}
+
+.tab-pane > .tab-header-area > .headers-region > .tab:selected > .tab-container > .focus-indicator {
+    -fx-opacity: 0;
+}
+
+
+.date-picker {
+    -fx-font: 17px "Roboto Regular";
+}
+
+.date-picker .text-field {
+    -fx-font: 17px "Roboto Regular";
+}

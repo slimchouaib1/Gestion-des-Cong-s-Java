@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane fx:id="MainAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="474.0" prefWidth="600.0" style="-fx-border-radius: 5px; -fx-border-color: #808080; -fx-background-size: 1200 900; -fx-background-radius: 5 5 5 5;" stylesheets="@assets/css/style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.bfpme.controllers.MessageController">
+   <children>
+      <Pane prefHeight="45.0" prefWidth="600.0" styleClass="pane-clr">
+         <children>
+            <Label fx:id="labelCC" alignment="CENTER" contentDisplay="CENTER" layoutX="11.0" layoutY="5.0" prefHeight="36.0" prefWidth="578.0" textFill="WHITE">
+               <styleClass>
+                  <String fx:value="FontSize-15" />
+                  <String fx:value="RobotoBlackItalic" />
+               </styleClass>
+            </Label>
+            <Button layoutX="541.0" layoutY="3.0" mnemonicParsing="false" onAction="#fermer" prefHeight="19.0" prefWidth="34.0" styleClass="settingsButton">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/imgs/icons8-close-24.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="11.0" layoutY="56.0" prefHeight="406.0" prefWidth="578.0" styleClass="pane1">
+         <children>
+            <Label fx:id="labelMSG" alignment="TOP_LEFT" layoutX="5.0" layoutY="6.0" prefHeight="395.0" prefWidth="568.0" wrapText="true" />
+         </children>
+      </Pane>
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</AnchorPane>

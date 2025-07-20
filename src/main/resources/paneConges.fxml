@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="MainAnchorPane" prefHeight="726.0" prefWidth="1119.0" styleClass="grad-bg" stylesheets="@assets/css/style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.bfpme.controllers.RHC.AttributionSoldeController">
+   <children>
+      <HBox alignment="CENTER" layoutX="655.0" layoutY="144.0" AnchorPane.leftAnchor="655.0" AnchorPane.rightAnchor="30.0">
+         <children>
+            <Label fx:id="labelSolde" alignment="CENTER" prefHeight="34.0" prefWidth="434.0">
+               <font>
+                  <Font name="Circular Std Medium" size="22.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="paneRoundedCornders" />
+                  <String fx:value="RobotoBoldItalic" />
+               </styleClass>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="754.0" layoutY="364.0" prefHeight="29.0" prefWidth="346.0" spacing="10.0" AnchorPane.rightAnchor="87.0">
+         <children>
+            <Label minWidth="120.0" prefHeight="18.0" prefWidth="120.0" styleClass="RobotoBoldItalic" text="Recherche:" />
+            <TextField fx:id="RechercheSol" minWidth="166.0" onAction="#Recherche_Solde" prefHeight="29.0" prefWidth="198.0" />
+            <Button fx:id="btnRemoveFilter" mnemonicParsing="false" onAction="#removeFilter" styleClass="btn-primary" text="X" />
+         </children>
+      </HBox>
+      <TableView fx:id="Table_TypeConge" layoutX="86.0" layoutY="411.0" prefHeight="256.0" prefWidth="677.0" AnchorPane.bottomAnchor="59.0" AnchorPane.leftAnchor="86.0" AnchorPane.rightAnchor="85.0" AnchorPane.topAnchor="411.0">
+         <columns>
+            <TableColumn fx:id="colDesignation" prefWidth="150.0" text="Designation" />
+            <TableColumn fx:id="colPas" prefWidth="166.0" text="Pas" />
+            <TableColumn fx:id="colPeriode" prefWidth="156.0" text="Période" />
+            <TableColumn fx:id="colFile" prefWidth="251.0" text="Fichier" />
+            <TableColumn fx:id="colLimite" prefWidth="174.0" text="Limite" />
+         </columns>
+      </TableView>
+      <TextField fx:id="ID_Solde" layoutX="34.0" layoutY="571.0" opacity="0.0" prefHeight="29.0" prefWidth="18.0" />
+      <HBox layoutX="84.0" layoutY="87.0" maxWidth="637.0" minHeight="281.0" minWidth="507.0" prefHeight="281.0" prefWidth="507.0" AnchorPane.leftAnchor="84.0" AnchorPane.rightAnchor="528.0" AnchorPane.topAnchor="87.0">
+         <children>
+            <GridPane alignment="CENTER" prefHeight="281.0" prefWidth="577.0" scaleShape="false">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="244.0" minWidth="10.0" prefWidth="191.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="328.0" minWidth="10.0" prefWidth="306.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="64.0" minHeight="10.0" prefHeight="58.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="64.0" minHeight="10.0" prefHeight="64.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="102.0" minHeight="10.0" prefHeight="78.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="74.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="74.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label styleClass="RobotoRegular" text="Designation :">
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <TextField fx:id="Designation_Solde" prefHeight="17.0" prefWidth="147.0" GridPane.columnIndex="1" />
+                  <Label styleClass="RobotoRegular" text="Pas : " GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <TextField fx:id="Pas_Solde" prefHeight="29.0" prefWidth="251.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label styleClass="RobotoRegular" text="Fichier:" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label styleClass="RobotoRegular" text="Limite:" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label styleClass="RobotoRegular" text="Periode:" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <HBox maxHeight="20.0" maxWidth="260.0" prefHeight="12.0" prefWidth="260.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <children>
+                        <RadioButton fx:id="fileOuiRadioButton" mnemonicParsing="false" prefHeight="17.0" prefWidth="134.0" text="Oui">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="fileToggleGroup" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <Separator orientation="VERTICAL" prefHeight="200.0" styleClass="seperator" />
+                        <RadioButton fx:id="fileNonRadioButton" mnemonicParsing="false" prefHeight="20.0" prefWidth="126.0" text="Non" toggleGroup="$fileToggleGroup" />
+                     </children>
+                  </HBox>
+                  <VBox prefHeight="94.0" prefWidth="289.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <children>
+                        <ComboBox fx:id="ComboPeriode" prefHeight="31.0" prefWidth="308.0" />
+                        <Separator prefHeight="16.0" prefWidth="289.0" />
+                        <Label fx:id="periodlabel" prefHeight="24.0" prefWidth="289.0" styleClass="FontSize-15" />
+                     </children>
+                  </VBox>
+                  <TextField fx:id="Limite_Solde" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+               </children>
+               <styleClass>
+                  <String fx:value="paneRoundedCornders" />
+                  <String fx:value="pane" />
+               </styleClass>
+            </GridPane>
+         </children>
+         <padding>
+            <Insets left="21.0" />
+         </padding>
+      </HBox>
+      <HBox fx:id="Hfirst" alignment="CENTER" layoutX="655.0" layoutY="231.0" prefHeight="46.0" prefWidth="382.0" AnchorPane.leftAnchor="655.0" AnchorPane.rightAnchor="82.0">
+         <children>
+            <Button fx:id="Ajout_Solde" mnemonicParsing="false" onAction="#AjouterTypeButton" prefHeight="44.0" prefWidth="123.0" text="Ajouter">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="btn-primary" />
+                  <String fx:value="RobotoBold" />
+               </styleClass>
+            </Button>
+            <Separator orientation="VERTICAL" prefHeight="41.0" prefWidth="2.0" styleClass="seperator" />
+            <Button fx:id="Modifier_Solde" mnemonicParsing="false" onAction="#ModifierTypeButton" prefHeight="44.0" prefWidth="123.0" text="Modifier">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="btn-primary" />
+                  <String fx:value="RobotoBold" />
+               </styleClass>
+            </Button>
+            <Separator orientation="VERTICAL" prefHeight="200.0" styleClass="seperator" />
+            <Button fx:id="Supprimer_Solde" mnemonicParsing="false" onAction="#SupprimerTypeButton" prefHeight="44.0" prefWidth="123.0" text="Supprimer">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="btn-primary" />
+                  <String fx:value="RobotoBold" />
+               </styleClass>
+            </Button>
+         </children>
+      </HBox>
+
+      <HBox fx:id="HEnrgBox" alignment="CENTER" disable="true" layoutX="646.0" layoutY="238.0" spacing="14.0" AnchorPane.leftAnchor="646.0" AnchorPane.rightAnchor="91.0">
+         <children>
+            <Button fx:id="btnCancel" mnemonicParsing="false" onAction="#Cancel" prefHeight="32.0" prefWidth="87.0" text="Annuler">
+               <styleClass>
+                  <String fx:value="btn-refuser" />
+                  <String fx:value="RobotoBold" />
+               </styleClass></Button>
+            <Button fx:id="btnSave" mnemonicParsing="false" onAction="#SaveButton" prefHeight="32.0" prefWidth="152.0" text="Enregistrer">
+               <styleClass>
+                  <String fx:value="btn-approver" />
+                  <String fx:value="RobotoBold" />
+               </styleClass></Button>
+         </children>
+      </HBox>
+
+      <Label alignment="TOP_CENTER" layoutX="453.0" layoutY="21.0" styleClass="RobotoBold" text="Gestion des Congés" AnchorPane.leftAnchor="453.0" AnchorPane.rightAnchor="451.0" AnchorPane.topAnchor="21.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

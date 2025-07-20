@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="RolesPane" minWidth="87.0" prefHeight="726.0" prefWidth="1119.0" stylesheets="@assets/css/style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.bfpme.controllers.RHC.paneRoleController">
+   <children>
+      <AnchorPane layoutX="70.0" layoutY="73.0" prefHeight="597.0" prefWidth="980.0" styleClass="paneRoundedCornders" AnchorPane.bottomAnchor="55.0" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="68.0" AnchorPane.topAnchor="73.0">
+         <children>
+            <HBox layoutX="54.0" layoutY="73.0" maxHeight="477.0" maxWidth="315.0" minHeight="477.0" minWidth="315.0" prefHeight="477.0" prefWidth="315.0" AnchorPane.bottomAnchor="46.0" AnchorPane.leftAnchor="54.0" AnchorPane.rightAnchor="611.0" AnchorPane.topAnchor="73.0">
+               <children>
+                  <ListView fx:id="roleListView" prefHeight="477.0" prefWidth="395.0" />
+               </children>
+            </HBox>
+            <Label layoutX="514.0" layoutY="61.0" styleClass="RobotoItalic" text="Désignation de fonction:" AnchorPane.leftAnchor="514.0" AnchorPane.topAnchor="61.0" />
+            <HBox layoutX="514.0" layoutY="88.0" prefHeight="29.0" prefWidth="281.0" AnchorPane.leftAnchor="514.0" AnchorPane.rightAnchor="186.0">
+               <children>
+                  <TextField fx:id="roleNameField" prefHeight="29.0" prefWidth="333.0" promptText="Désignation de rôle..." />
+               </children>
+            </HBox>
+            <Label layoutX="516.0" layoutY="135.0" styleClass="RobotoItalic" text="Déscription :" AnchorPane.leftAnchor="515.0" AnchorPane.topAnchor="135.0" />
+            <HBox layoutX="515.0" layoutY="164.0" minWidth="281.0" prefWidth="281.0" AnchorPane.leftAnchor="514.0" AnchorPane.rightAnchor="186.0" AnchorPane.topAnchor="163.0">
+               <children>
+                  <TextArea fx:id="roleDescriptionField" prefHeight="104.0" prefWidth="333.0" promptText="Déscription..." wrapText="true" />
+               </children>
+            </HBox>
+            <Label layoutX="516.0" layoutY="296.0" styleClass="RobotoItalic" text="Fonction parent :" />
+            <Button fx:id="AddNewRoleCombo" layoutX="852.0" layoutY="328.0" onAction="#addRole" prefHeight="40.0" prefWidth="40.0" styleClass="btn-primary" text="+" />
+            <HBox fx:id="ParentRoleHBbox" layoutX="515.0" layoutY="328.0" minWidth="281.0" prefHeight="179.0" prefWidth="330.0" AnchorPane.leftAnchor="514.0" AnchorPane.topAnchor="327.0">
+               <children>
+                  <ScrollPane prefHeight="179.0" prefWidth="333.0" styleClass="paneRoundedCornders">
+                     <content>
+                        <VBox fx:id="roleParentVBox" prefHeight="0.0" prefWidth="315.0" spacing="4.0" />
+                     </content>
+                  </ScrollPane>
+               </children>
+            </HBox>
+            <HBox fx:id="btnCRUDHbox" layoutX="529.0" layoutY="519.0" prefHeight="48.0" prefWidth="302.0" spacing="8.0">
+               <children>
+                  <Separator orientation="VERTICAL" prefHeight="200.0" styleClass="seperator" />
+                  <Button fx:id="btnAjouter" maxHeight="50.0" maxWidth="87.0" onAction="#handleAddRole" prefHeight="41.0" prefWidth="87.0" text="Ajouter">
+                     <styleClass>
+                        <String fx:value="btn-primary" />
+                        <String fx:value="RobotoBold" />
+                     </styleClass></Button>
+                  <Button fx:id="btnModifier" maxHeight="71.0" maxWidth="87.0" minHeight="10.0" onAction="#handleEditRole" prefHeight="71.0" prefWidth="87.0" text="Modifier">
+                     <styleClass>
+                        <String fx:value="btn-primary" />
+                        <String fx:value="RobotoBold" />
+                     </styleClass></Button>
+                  <Button fx:id="btnSupprimer" onAction="#handleDeleteRole" prefHeight="87.0" prefWidth="87.0" text="Supprimer">
+                     <styleClass>
+                        <String fx:value="btn-primary" />
+                        <String fx:value="RobotoBold" />
+                     </styleClass></Button>
+               </children>
+            </HBox>
+            <Label layoutX="571.0" layoutY="23.0" prefHeight="17.0" prefWidth="281.0">
+               <styleClass>
+                  <String fx:value="FontSize-15" />
+                  <String fx:value="RobotoMediumItalic" />
+               </styleClass>
+            </Label>
+            <Label layoutX="54.0" layoutY="42.0" prefHeight="18.0" prefWidth="174.0" styleClass="RobotoBold" text="Liste des fonctions" AnchorPane.leftAnchor="54.0" AnchorPane.topAnchor="42.0" />
+            <HBox fx:id="btnEAHbox" layoutX="529.0" layoutY="519.0" prefHeight="48.0" prefWidth="302.0" spacing="8.0">
+               <children>
+                  <Separator orientation="VERTICAL" prefHeight="200.0" styleClass="seperator" />
+                  <Button fx:id="btnEnregistrer" onAction="#Enregistrer" prefHeight="48.0" prefWidth="149.0" text="Enregistrer">
+                     <styleClass>
+                        <String fx:value="btn-approver" />
+                        <String fx:value="RobotoBold" />
+                     </styleClass></Button>
+                  <Button fx:id="btnAnnuler" maxHeight="50.0" maxWidth="87.0" onAction="#Annuler" prefHeight="41.0" prefWidth="87.0" text="Annuler">
+                     <styleClass>
+                        <String fx:value="btn-refuser" />
+                        <String fx:value="RobotoBold" />
+                     </styleClass></Button>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="366.0" layoutY="24.0" prefHeight="29.0" prefWidth="388.0" styleClass="RobotoBold" text="Gestion des Fonctions" AnchorPane.leftAnchor="366.0" AnchorPane.rightAnchor="365.0" AnchorPane.topAnchor="24.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+   <styleClass>
+      <String fx:value="pane1" />
+      <String fx:value="grad-bg" />
+   </styleClass>
+</AnchorPane>

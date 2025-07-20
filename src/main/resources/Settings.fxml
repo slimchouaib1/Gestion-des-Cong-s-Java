@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="SettingsCard" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="333.0" prefWidth="208.0" stylesheets="@assets/css/style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.bfpme.controllers.SettingsController">
+   <children>
+      <Separator layoutY="93.0" prefHeight="0.0" prefWidth="208.0" styleClass="separator1" />
+      <GridPane alignment="CENTER" layoutY="103.0" prefHeight="158.0" prefWidth="208.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="94.0" minWidth="10.0" prefWidth="65.0" />
+          <ColumnConstraints halignment="CENTER" maxWidth="157.0" minWidth="10.0" prefWidth="135.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints fillHeight="false" maxHeight="55.0" minHeight="10.0" prefHeight="50.0" valignment="CENTER" />
+          <RowConstraints maxHeight="61.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="61.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView fitHeight="33.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@assets/imgs/aide.png" />
+               </image>
+               <GridPane.margin>
+                  <Insets left="15.0" />
+               </GridPane.margin>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@assets/imgs/mail.png" />
+               </image>
+               <GridPane.margin>
+                  <Insets left="15.0" />
+               </GridPane.margin>
+            </ImageView>
+            <Label layoutX="-10.0" text="Aide et Support" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="-10.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Contactez-nous" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="-10.0" />
+               </GridPane.margin>
+            </Label>
+            <Label prefWidth="92.0" text="Reconnaisance" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="15.0" />
+               </GridPane.margin>
+            </Label>
+            <Label alignment="CENTER" prefWidth="92.0" text="facial" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets top="16.0" />
+               </padding>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#Help_button" prefHeight="40.0" prefWidth="135.0" styleClass="settingsButton" GridPane.columnIndex="1" />
+            <Button mnemonicParsing="false" onAction="#Contact_button" prefHeight="35.0" prefWidth="135.0" styleClass="settingsButton" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onAction="#FacialRecognition" prefHeight="48.0" prefWidth="135.0" styleClass="settingsButton" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <ImageView fitHeight="30.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@assets/imgs/icons8-facial-recognition-30.png" />
+               </image>
+               <GridPane.margin>
+                  <Insets left="15.0" />
+               </GridPane.margin>
+            </ImageView>
+         </children>
+      </GridPane>
+      <GridPane layoutY="284.0" prefHeight="30.0" prefWidth="208.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="84.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="122.0" minWidth="10.0" prefWidth="116.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView fitHeight="31.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER">
+               <image>
+                  <Image url="@assets/imgs/logout.png" />
+               </image>
+            </ImageView>
+            <Label prefHeight="20.0" prefWidth="116.0" text="Déconnexion" textFill="WHITE" GridPane.columnIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#Deconnection" prefHeight="30.0" prefWidth="166.0" styleClass="settingsButton" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+      <HBox alignment="CENTER_LEFT" layoutX="16.0" layoutY="8.0" prefHeight="80.0" prefWidth="176.0">
+         <children>
+            <ImageView fx:id="User_pdp" fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/imgs/User.jpg" />
+               </image>
+            </ImageView>
+            <Separator orientation="VERTICAL" prefHeight="80.0" prefWidth="21.0" styleClass="seperator" />
+            <GridPane alignment="CENTER" maxHeight="60.0" prefHeight="60.0" prefWidth="139.0" HBox.hgrow="NEVER">
+              <columnConstraints>
+                <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="46.0" minHeight="0.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="User_name" prefHeight="17.0" prefWidth="108.0" text="Slim Chouaib" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="User_role" contentDisplay="CENTER" prefHeight="17.0" prefWidth="154.0" text="Employé" textAlignment="CENTER" textFill="WHITE" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+         </children>
+      </HBox>
+      <Separator layoutY="269.0" prefHeight="0.0" prefWidth="208.0" styleClass="separator1" />
+   </children>
+   <styleClass>
+      <String fx:value="pane-clr" />
+      <String fx:value="transparent-background" />
+   </styleClass>
+</Pane>

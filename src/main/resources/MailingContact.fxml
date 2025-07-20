@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="MainAnchorPane" prefHeight="830.0" prefWidth="1340.0" styleClass="grad-bg" stylesheets="@assets/css/style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.bfpme.controllers.MailingContactController">
+   <children>
+      <Pane layoutX="32.0" layoutY="139.0" prefHeight="677.0" prefWidth="1277.0" styleClass="pane1">
+         <children>
+            <TextArea fx:id="mail_text" layoutX="32.0" layoutY="174.0" prefHeight="391.0" prefWidth="1214.0" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextArea>
+            <TextField fx:id="mail_obj" layoutX="146.0" layoutY="101.0" prefHeight="28.0" prefWidth="1100.0" />
+            <HBox layoutX="466.0" layoutY="599.0" prefHeight="55.0" prefWidth="346.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#Envoyer_mail" prefHeight="72.0" prefWidth="91.0" text="Envoyer">
+                     <styleClass>
+                        <String fx:value="btn-primary" />
+                        <String fx:value="RobotoBold" />
+                     </styleClass></Button>
+                  <Separator orientation="VERTICAL" prefHeight="55.0" prefWidth="171.0" styleClass="seperator" />
+                  <Button mnemonicParsing="false" onAction="#Annuler_mail" prefHeight="64.0" prefWidth="99.0" text="Annuler">
+                     <styleClass>
+                        <String fx:value="btn-primary" />
+                        <String fx:value="RobotoBold" />
+                     </styleClass></Button>
+               </children>
+            </HBox>
+            <Label layoutX="32.0" layoutY="101.0" prefHeight="28.0" prefWidth="95.0" text="Objet:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="32.0" layoutY="61.0" prefHeight="28.0" prefWidth="99.0" text="Destinataire :">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="mail_dest" layoutX="146.0" layoutY="63.0" prefHeight="29.0" prefWidth="271.0" promptText="Nom et Prenom  OU  E-mail" />
+            <Label layoutX="32.0" layoutY="140.0" prefHeight="28.0" prefWidth="95.0" text="Message :">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

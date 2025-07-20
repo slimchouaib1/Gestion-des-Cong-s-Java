@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="HierarchyPane" prefHeight="650.0" prefWidth="1000.0" stylesheets="@assets/css/style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.bfpme.controllers.RHC.paneHieController">
+   <children>
+      <AnchorPane layoutX="40.0" layoutY="46.0" prefHeight="558.0" prefWidth="921.0" styleClass="paneRoundedCornders" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="46.0">
+         <children>
+            <VBox layoutX="600.0" layoutY="356.0" spacing="10" />
+            <HBox layoutX="124.0" layoutY="119.0" minHeight="400.0" minWidth="250.0" prefHeight="400.0" prefWidth="250.0" AnchorPane.bottomAnchor="39.0" AnchorPane.leftAnchor="123.0" AnchorPane.rightAnchor="547.0" AnchorPane.topAnchor="118.0">
+               <children>
+                  <ListView fx:id="roleHListView" prefHeight="400.0" prefWidth="400.0" />
+               </children>
+            </HBox>
+            <VBox layoutX="548.0" layoutY="183.0" minHeight="174.0" minWidth="226.0" prefHeight="174.0" prefWidth="234.0" spacing="10.0" AnchorPane.leftAnchor="547.0" AnchorPane.rightAnchor="143.0" AnchorPane.topAnchor="182.0">
+               <children>
+                  <ComboBox fx:id="DepHComboBox" prefHeight="31.0" prefWidth="688.0" promptText="Sélectionner département" />
+                  <ComboBox fx:id="RoleHComboBox" prefHeight="31.0" prefWidth="688.0" promptText="Sélectionner rôle" />
+                  <ComboBox fx:id="parentRoleComboBox" prefHeight="31.0" prefWidth="688.0" promptText="Sélectionner rôle parent" />
+                  <HBox alignment="TOP_CENTER" maxWidth="688.0" prefHeight="27.0" prefWidth="688.0" spacing="15.0">
+                     <children>
+                        <Button onAction="#handleAddRoleToH" styleClass="btn-primary" text="Ajouter" />
+                        <Button onAction="#handleEditRoleH" styleClass="btn-primary" text="Modifier" />
+                        <Button onAction="#handleDeleteRoleH" styleClass="btn-primary" text="Supprimer" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER" layoutX="348.0" layoutY="38.0" AnchorPane.leftAnchor="347.0" AnchorPane.rightAnchor="351.0" AnchorPane.topAnchor="37.0">
+               <children>
+                  <ComboBox fx:id="ComboFilderDepHie" prefHeight="31.0" prefWidth="226.0" promptText="Selectionner département" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+   <styleClass>
+      <String fx:value="pane1" />
+      <String fx:value="grad-bg" />
+   </styleClass>
+</AnchorPane>

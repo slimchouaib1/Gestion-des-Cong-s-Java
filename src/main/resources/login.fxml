@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="MainAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="830.0" prefWidth="1340.0" styleClass="grad-bg" stylesheets="@assets/css/style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.bfpme.controllers.LoginController">
+    <children>
+      <GridPane prefHeight="830.0" prefWidth="1340.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <AnchorPane>
+               <children>
+                      <AnchorPane layoutX="20.0" layoutY="23.0" prefHeight="785.0" prefWidth="630.0" styleClass="pane1" AnchorPane.bottomAnchor="22.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="23.0">
+                          <children>
+                              <HBox layoutX="184.0" layoutY="319.0" prefHeight="28.0" prefWidth="235.0" AnchorPane.leftAnchor="184.0" AnchorPane.rightAnchor="183.0">
+                                  <children>
+                                      <TextField fx:id="LoginEmail" prefHeight="28.0" prefWidth="526.0" promptText="email" styleClass="loginTextField" text="ayachi@gmail.com">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font></TextField>
+                                  </children>
+                              </HBox>
+                              <HBox layoutX="184.0" layoutY="450.0" prefHeight="28.0" prefWidth="274.0" AnchorPane.leftAnchor="184.0" AnchorPane.rightAnchor="144.0">
+                                  <children>
+                                      <PasswordField fx:id="LoginMDP" onAction="#Login" prefHeight="28.0" prefWidth="476.0" promptText="mdp" styleClass="loginTextField" text="1234" />
+                                      <TextField fx:id="showPasswordField" managed="false" prefHeight="28.0" prefWidth="476.0" promptText="mdp" style="-fx-background-color: transparent; -fx-border-color: transparent transparent #eab53f transparent; -fx-border-width: 0 0 1 0; -fx-padding: 0 0 3 0;" visible="false" />
+                                      <Button fx:id="toggleButton" layoutX="470.0" layoutY="0.0" prefHeight="28.0" prefWidth="50.0" styleClass="settingsButton">
+                                          <graphic>
+                                              <ImageView fx:id="toggleIcon" fitHeight="20.0" fitWidth="20.0" />
+                                          </graphic>
+                                      </Button>
+                                  </children>
+                              </HBox>
+                              <HBox alignment="CENTER" layoutX="185.0" layoutY="530.0" prefHeight="27.0" prefWidth="263.0" spacing="20.0" AnchorPane.leftAnchor="185.0" AnchorPane.rightAnchor="182.0">
+                                  <children>
+                                      <Button mnemonicParsing="false" onAction="#Login" prefHeight="25.0" prefWidth="194.0" styleClass="btn-primary" text="Se Connecter" />
+                              <Button fx:id="FacialRecognitionButton" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" maxWidth="27.0" minHeight="27.0" minWidth="27.0" mnemonicParsing="false" onAction="#FacialRecognitionButton" prefHeight="27.0" prefWidth="27.0" styleClass="settingsButton">
+                                 <graphic>
+                                    <ImageView fitHeight="27.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@assets/imgs/facial-recognition.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic></Button>
+                                  </children>
+                              </HBox>
+                              <Label alignment="CENTER" layoutX="276.0" layoutY="279.0" styleClass="RobotoBold" text="E-mail" AnchorPane.leftAnchor="276.0" AnchorPane.rightAnchor="276.0">
+                           <font>
+                              <Font size="28.0" />
+                           </font>
+                        </Label>
+                              <Label alignment="CENTER" layoutX="227.0" layoutY="393.0" prefHeight="38.0" prefWidth="179.0" styleClass="RobotoBold" text="Mot de Passe" AnchorPane.leftAnchor="226.0" AnchorPane.rightAnchor="226.0">
+                           <font>
+                              <Font size="26.0" />
+                           </font>
+                        </Label>
+                              <Label alignment="CENTER" layoutX="158.0" layoutY="25.0" prefHeight="54.0" prefWidth="286.0" text="Page de Connexion" AnchorPane.leftAnchor="158.0" AnchorPane.rightAnchor="158.0" AnchorPane.topAnchor="25.0">
+                                  <font>
+                                      <Font size="24.0" />
+                                  </font>
+                              </Label>
+                        <HBox alignment="CENTER" layoutX="215.0" layoutY="79.0" AnchorPane.leftAnchor="215.0" AnchorPane.rightAnchor="215.0" AnchorPane.topAnchor="79.0">
+                           <children>
+                              <ImageView fx:id="imageView" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                           </children>
+                        </HBox>
+                          </children>
+                      </AnchorPane>
+               </children>
+            </AnchorPane>
+                <AnchorPane prefHeight="2000.0" prefWidth="900.0" styleClass="pane-clr" GridPane.columnIndex="1">
+                    <children>
+                        <HBox alignment="CENTER" layoutX="174.0" layoutY="252.0" AnchorPane.bottomAnchor="256.0" AnchorPane.leftAnchor="174.0" AnchorPane.rightAnchor="174.0" AnchorPane.topAnchor="252.0">
+                            <children>
+                                <ImageView fitHeight="322.0" fitWidth="472.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@assets/imgs/logo_bfpme.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                    </children>
+                </AnchorPane>
+         </children>
+      </GridPane>
+    </children>
+</AnchorPane>
